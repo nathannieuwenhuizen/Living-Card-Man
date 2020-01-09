@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CardMan : MonoBehaviour
 {
@@ -46,6 +47,10 @@ public class CardMan : MonoBehaviour
     {
         animationIndex++;
         animator.SetInteger("animationIndex", animationIndex);
+        if (animationIndex > 5)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     public void PlaceBodyParts()
     {
