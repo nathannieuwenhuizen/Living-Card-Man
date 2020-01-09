@@ -12,6 +12,9 @@ public class CardMan : MonoBehaviour
     int bodyPartsVisible = 0;
     int animationIndex = 0;
 
+    [SerializeField]
+    float clickDuration = 0.5f;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -72,7 +75,7 @@ public class CardMan : MonoBehaviour
     }
     IEnumerator ResetClicking()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(clickDuration);
         clicked = false;
     }
 }

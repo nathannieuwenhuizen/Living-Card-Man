@@ -190,7 +190,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b0d85b1494df0b346bddc3d049ef02d7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.8784314}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8235294}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -335,6 +335,7 @@ MonoBehaviour:
     torso: {fileID: 521779826}
     head: {fileID: 154674992}
     expression: {fileID: 743377401}
+  clickDuration: 0.2
 --- !u!95 &755267239
 Animator:
   serializedVersion: 3
@@ -614,6 +615,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786297560987817582, guid: 53e3ba86a6e694342b4b9438fd6d9c5f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786297560987817582, guid: 53e3ba86a6e694342b4b9438fd6d9c5f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786297560987817582, guid: 53e3ba86a6e694342b4b9438fd6d9c5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -34.733
       objectReference: {fileID: 0}
     - target: {fileID: 5815670120457787984, guid: 53e3ba86a6e694342b4b9438fd6d9c5f,
         type: 3}
